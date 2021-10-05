@@ -6,7 +6,7 @@ from random import seed
 import xml.etree.ElementTree as xml
 from xml.dom import minidom
 
-from enum import Enum, auto
+from enum import Enum
 
 
 class ColorMap(Enum):
@@ -19,12 +19,12 @@ class ColorMap(Enum):
 
 
 class StoneFishSceneElement:
-    def __init__(self, header) -> None:
+    def __init__(self, header):
         # self.tag = tag
         self.xml_element = xml.Element(header)
         # self.children = []
 
-    def set_attribute(self, attrib_name : str, attrib_value : str):
+    def set_attribute(self, attrib_name, attrib_value):
         self.xml_element.set(attrib_name, str(attrib_value))
 
     def toString(self):
@@ -34,7 +34,7 @@ class StoneFishSceneElement:
         reparsed = minidom.parseString(rough_string)
         return reparsed.toprettyxml(indent="  ")
 
-    def append(self, sf_element : 'StoneFishSceneElement'):
+    def append(self, sf_element):
         # self.children.append(sf_element)
         self.xml_element.append(sf_element.xml_element)
 
@@ -43,28 +43,28 @@ class StoneFishSceneElement:
 
 
 class WorldTransform(StoneFishSceneElement):
-    def __init__(self, rpy = (0.0, 0.0, 0.0), xyz = (0.0, 0.0, 0.0)) -> None:
+    def __init__(self, rpy = (0.0, 0.0, 0.0), xyz = (0.0, 0.0, 0.0)):
         super().__init__('world_transform')
         self.set_world_transform(rpy, xyz)
     
     def set_world_transform(self, rpy, xyz):
         self.rpy = rpy
         self.xyz = xyz
-        super().set_attribute('rpy', f'{self.rpy[0]} {self.rpy[1]} {self.rpy[2]}')
-        super().set_attribute('xyz', f'{self.xyz[0]} {self.xyz[1]} {self.xyz[2]}')
+        super().set_attribute('rpy', '{} {} {}'.format(self.rpy[0], self.rpy[1], self.rpy[2]))
+        super().set_attribute('xyz', '{} {} {}'.format(self.xyz[0], self.xyz[1], self.xyz[2]))
 
 
 class Origin(StoneFishSceneElement):
-    def __init__(self, rpy=(0.0, 0.0, 0.0), xyz=(0.0, 0.0, 0.0)) -> None:
+    def __init__(self, rpy=(0.0, 0.0, 0.0), xyz=(0.0, 0.0, 0.0)):
         super().__init__('origin')
         r, p, y1 = rpy
         x, y2, z = xyz
-        self.set_attribute('rpy', f'{r} {p} {y1}')
-        self.set_attribute('xyz', f'{x} {y2} {z}')
+        self.set_attribute('rpy', '{} {} {}'.format(r, p, y1))
+        self.set_attribute('xyz', '{} {} {}'.format(x, y2, z))
 
 
 class Scene(StoneFishSceneElement):
-    def __init__(self) -> None:
+    def __init__(self):
         super().__init__('scenario')
         self.materials = StoneFishSceneElement('materials')
         self.append(self.materials)
@@ -81,11 +81,11 @@ class Scene(StoneFishSceneElement):
         self.light = Light(name, radius, illuminance, rgb, xyz, rpy)
         self.append(self.light)
 
-    def add_material(self, name : str, density : float, restitution : float):
+    def add_material(self, name, density, restitution):
         met = Material(name, density, restitution)
         self.materials.append(met)
 
-    def add_look(self, name: str, gray :float, rgb : tuple, roughness : float, texture=None):
+    def add_look(self, name, gray, rgb, roughness, texture=None):
         look = Look(name, gray, rgb, roughness)
         if texture is not None:
             look.set_attribute('texture', texture)
@@ -94,7 +94,7 @@ class Scene(StoneFishSceneElement):
 
 class Environment(StoneFishSceneElement):
     def __init__(self, latitude="32.8141543637297", 
-        longitude="34.94752031090906", azimuth="20.0", elevation="50.0") -> None:
+        longitude="34.94752031090906", azimuth="20.0", elevation="50.0"):
         super().__init__('environment')
         
         # ned
@@ -118,8 +118,8 @@ class Environment(StoneFishSceneElement):
 
 
 class Light(StoneFishSceneElement):
-    def __init__(self, name, radius : float, illuminance : float, rgb : tuple,
-        xyz : tuple, rpy : tuple) -> None:
+    def __init__(self, name, radius, illuminance, rgb,
+        xyz, rpy):
         super().__init__('light')
         # name
         self.set_attribute('name', name)
@@ -132,7 +132,7 @@ class Light(StoneFishSceneElement):
 
         # color
         color = StoneFishSceneElement('color')
-        color.set_attribute('rgb', f'{rgb[0]} {rgb[1]} {rgb[2]}')
+        color.set_attribute('rgb', '{} {} {}'.format(rgb[0], rgb[1], rgb[2]))
         self.append(color)
 
         # World_transform
@@ -141,18 +141,18 @@ class Light(StoneFishSceneElement):
 
 
 class Look(StoneFishSceneElement):
-    def __init__(self, name: str, gray :float, rgb : tuple, roughness : float) -> None:
+    def __init__(self, name, gray, rgb, roughness):
         super().__init__('look')
         self.set_attribute('name', name)
         if gray is not None:
             self.set_attribute('gray',gray)
         if rgb is not None:
-            self.set_attribute('rgb',f'{rgb[0]} {rgb[1]} {rgb[2]}')
+            self.set_attribute('rgb','{} {} {}'.format(rgb[0], rgb[1], rgb[2]))
         self.set_attribute('roughness',roughness)
 
 
 class Material(StoneFishSceneElement):
-    def __init__(self, name : str, density : float, restitution : float) -> None:
+    def __init__(self, name , density, restitution):
         super().__init__('material')
         self.set_attribute('name', name)
         self.set_attribute('density',density)
@@ -164,8 +164,8 @@ class Material(StoneFishSceneElement):
 
 
 class StoneFishModel(StoneFishSceneElement):
-    def __init__(self, header, name : str, type : str, material : str, look : str, 
-    world_transform : WorldTransform) -> None:
+    def __init__(self, header, name, type, material, look, 
+    world_transform):
         super().__init__(header)
         self.set_attribute('name',name)
         self.set_attribute('type', type)
@@ -185,13 +185,13 @@ class StoneFishModel(StoneFishSceneElement):
 
 
 class StaticModel(StoneFishModel):
-    def __init__(self, name: str, type: str, material: str, look: str, world_transform: WorldTransform) -> None:
+    def __init__(self, name, type, material, look, world_transform):
         super().__init__('static', name, type, material, look, world_transform)
 
         
 
 class AnimatedModel(StoneFishModel):
-    def __init__(self, name: str, type: str, material: str, look: str, world_transform: WorldTransform) -> None:
+    def __init__(self, name, type, material, look, world_transform):
         super().__init__('animated', name, type, material, look, world_transform)
 
 
@@ -204,28 +204,28 @@ class AnimatedModel(StoneFishModel):
 
 
 class Plane(StaticModel):
-    def __init__(self, name, material: str, look: str, world_transform: WorldTransform) -> None:
+    def __init__(self, name, material, look, world_transform):
         super().__init__(name, 'plane', material, look, world_transform)
 
 
 class Dimentions(StoneFishSceneElement):
-    def __init__(self) -> None:
+    def __init__(self):
         super().__init__('dimensions')
 
 
 class SphereDimentions(Dimentions):
-    def __init__(self, radius : float) -> None:
+    def __init__(self, radius):
         super().__init__()
         super().set_attribute('radius', radius)
 
 
 class BoxDimentions(Dimentions):
-    def __init__(self, x : float, y : float, z : float) -> None:
+    def __init__(self, x, y, z):
         super().__init__()
-        super().set_attribute('xyz', f'{x} {y} {z}')
+        super().set_attribute('xyz', '{} {} {}'.format(x, y, z))
 
 class CylinderDimentions(Dimentions):
-    def __init__(self, radius : float, height : float) -> None:
+    def __init__(self, radius, height):
         super().__init__()
         super().set_attribute('radius', radius)
         super().set_attribute('height', height)
@@ -233,26 +233,26 @@ class CylinderDimentions(Dimentions):
 
 
 class Sphere(StaticModel):
-    def __init__(self, name : str, radius, material : str, look : str, world_transform : WorldTransform) -> None:
+    def __init__(self, name, radius, material, look, world_transform):
         super().__init__(name, 'sphere', material, look, world_transform)
         super().append(SphereDimentions(radius))
 
 
 class Box(StaticModel):
-    def __init__(self, name : str, xyz : tuple,
-    material : str, look : str, world_transform : WorldTransform) -> None:
+    def __init__(self, name, xyz,
+    material, look, world_transform):
         super().__init__(name, 'box', material, look, world_transform)
         x, y, z = xyz
         super().append(BoxDimentions(x, y, z))
 
 class Cylinder(StaticModel):
-    def __init__(self, name: str, radius : float, height : float, material: str, look: str, world_transform: WorldTransform) -> None:
+    def __init__(self, name, radius, height, material, look, world_transform):
         super().__init__(name, 'cylinder', material, look, world_transform)
         super().append(CylinderDimentions(radius, height))
 
 
 class MeshFileModel(StaticModel):
-    def __init__(self, name: str, filename : str, scale : float, material: str, look: str, world_transform: WorldTransform) -> None:
+    def __init__(self, name, filename, scale, material, look, world_transform):
         super().__init__(name, 'model', material, look, world_transform)
 
         # physical
@@ -276,7 +276,7 @@ class MeshFileModel(StaticModel):
 
 
 class Sensor(StoneFishSceneElement):
-    def __init__(self, name : str, type : str, origin : Origin, topic : str) -> None:
+    def __init__(self, name, type, origin, topic):
         super().__init__('sensor')
         self.set_attribute('name', name)
         self.set_attribute('type', type)
@@ -292,8 +292,8 @@ class Sensor(StoneFishSceneElement):
 
 
 class DepthCam(Sensor):
-    def __init__(self, name: str, origin: Origin, topic: str, rate : float,
-    resolution=(1280,720), horizontal_fov=55.5, depth_min=0.2, depth_max=60.0) -> None:
+    def __init__(self, name, origin, topic, rate,
+    resolution=(1280,720), horizontal_fov=55.5, depth_min=0.2, depth_max=60.0):
         super().__init__(name, 'depthcamera', origin, topic)
         # rate
         self.set_attribute('rate', rate)
@@ -313,8 +313,8 @@ class DepthCam(Sensor):
 
 
 class FLC(Sensor):
-    def __init__(self, name: str, origin: Origin, topic: str, rate : float,
-    resolution=(1280,720), horizontal_fov=55.5) -> None:
+    def __init__(self, name, origin, topic, rate,
+    resolution=(1280,720), horizontal_fov=55.5):
         super().__init__(name, 'camera', origin, topic)
         # rate
         self.set_attribute('rate', rate)
@@ -332,9 +332,9 @@ class FLC(Sensor):
 
 
 class FLS(Sensor):
-    def __init__(self, name: str, origin: Origin, topic: str, fls_colormap: ColorMap, beams = 512,
+    def __init__(self, name, origin, topic, fls_colormap, beams = 512,
     bins = 500, horizontal_fov = 130.0, vertical_fov = 20.0, range_min = 0.05,
-    range_max = 60.0, gain = 3.1) -> None:
+    range_max = 60.0, gain = 3.1):
         super().__init__(name, 'fls', origin, topic)
         # specs
         specs = StoneFishSceneElement('specs')
@@ -368,18 +368,18 @@ class FLS(Sensor):
 
 
 class KeyPoint(StoneFishSceneElement):
-    def __init__(self, time : float, xyz=(0.0, 0.0, 0.0), rpy=(0.0, 0.0, 0.0)) -> None:
+    def __init__(self, time, xyz=(0.0, 0.0, 0.0), rpy=(0.0, 0.0, 0.0)):
         super().__init__('keypoint')
         self.set_attribute('time', time)
         x, y1, z = xyz
         r, p, y2 = rpy
-        self.set_attribute('xyz', f'{x} {y1} {z}')
-        self.set_attribute('rpy', f'{r} {p} {y2}')
+        self.set_attribute('xyz', '{} {} {}'.format(x, y1, z))
+        self.set_attribute('rpy', '{} {} {}'.format(r, p, y2))
 
 
 
 class Trajectory(StoneFishSceneElement):
-    def __init__(self, keypoints : list) -> None:
+    def __init__(self, keypoints):
         super().__init__('trajectory')
         self.set_attribute('type', 'spline')
         self.set_attribute('playback', 'repeat')
@@ -391,7 +391,7 @@ class Trajectory(StoneFishSceneElement):
 
 
 class AnimatedFrame(StoneFishSceneElement):
-    def __init__(self, name : str, keypoints : list, colormap: ColorMap) -> None:
+    def __init__(self, name, keypoints, colormap):
         super().__init__('animated')
         self.set_attribute('name', name)
         self.set_attribute('type', 'empty')

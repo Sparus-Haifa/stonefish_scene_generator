@@ -5,7 +5,7 @@ random.seed(0)
 
 
 class SceneGenerator:
-    def __init__(self, seabed_depth = 5.0) -> None:
+    def __init__(self, seabed_depth = 5.0):
         self.scene = Scene()
         # seabed
         self.seabed_depth = seabed_depth
@@ -27,7 +27,7 @@ class SceneGenerator:
         # box = Box("box2", (1, 2, 3), 'Steel', 'Red', wt1)
         # self.scene.append(box)
 
-    def add_empty_frame(self, colormap: ColorMap) -> None:
+    def add_empty_frame(self, colormap):
         # animated frame
         keypoints = []
         t = 0.0
@@ -41,24 +41,24 @@ class SceneGenerator:
         self.scene.append(frame)       
 
 
-    def generate(self) -> str:
+    def generate(self):
         """returns a scn file in str format"""
         return self.scene.toString()
 
-    def add_boxes(self) -> None:
+    def add_boxes(self):
         """add lots of boxes"""
         box_height = 1
         for x in range (0,100,10):
             for y in range(-100,100,10):
                 depth = random.uniform(0,self.seabed_depth - box_height/2)
                 wt = WorldTransform((0.0, 0.0, 0.0), (x, y, depth))
-                box = Box(f"box{x}.{y}", (1,1,1), 'Rock', 'Red', wt)
+                box = Box("box{}.{}".format(x,y), (1,1,1), 'Rock', 'Red', wt)
                 self.scene.append(box)
 
 
-    def add_reefs(self) -> None:
+    def add_reefs(self):
         """add lots of reefs"""
-        self.scene.add_look('reef3', 1.0, None, 0.3, 'reef3/2019_sat.jpg')
+        self.scene.add_look('reef3', 1.0, None, 0.3, 'reef3/2019.jpg')
         error = 2
         for x in range (0,120,10):
             for y in range(-40,40,10):
@@ -71,7 +71,7 @@ class SceneGenerator:
                 y = random.uniform(y - error,y + error)
                 wt = WorldTransform((-0.2, 0.15, angle), (x, y, self.seabed_depth+0.05))
                 # reef model
-                reef = MeshFileModel('reef', 'reef3/2019_10.obj', 1.0, 'Rock', 'reef3',wt)
+                reef = MeshFileModel('reef', 'reef3/2019.obj', 1.0, 'Rock', 'reef3',wt)
                 self.scene.append(reef)
 
 
@@ -95,7 +95,7 @@ def simple_scene():
     scene = gen.generate()
     print(scene)
 
-    f = open("/home/zeged/catkin_ws/src/cola2_stonefish/scenarios/sparus2_haifa_deepersense.scn", "w")
+    f = open("/home/ilan/catkin_ws/src/cola2_stonefish/scenarios/sparus2_haifa_deepersense.scn", "w")
     f.write(scene)
     f.close()
 
@@ -139,7 +139,7 @@ def main():
 
     # reef model
     scene.add_look('reef3', 1.0, None, 0.3, 'reef3/2019_sat.jpg')
-    reef = MeshFileModel('reef', 'reef3/2019_up.obj', 1.0, 'Rock', 'reef3', WorldTransform((0,0,0),(-35,-5,6.1)))
+    reef = MeshFileModel('reef', 'reef3/2019.obj', 1.0, 'Rock', 'reef3', WorldTransform((0,0,0),(-35,-5,6.1)))
     scene.append(reef)
 
     # animated frame
