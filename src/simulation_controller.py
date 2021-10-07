@@ -20,8 +20,6 @@ class SimulationController:
         self.ros_is_running = False
         self.timer = None
         
-        uuid = roslaunch.rlutil.get_or_generate_uuid(None, False)
-        roslaunch.configure_logging(uuid)
 
 
         def getPath():
@@ -40,6 +38,8 @@ class SimulationController:
             return full_path
 
         full_path = getPath()
+        uuid = roslaunch.rlutil.get_or_generate_uuid(None, False)
+        roslaunch.configure_logging(uuid)
         self.launch = roslaunch.parent.ROSLaunchParent(uuid, [full_path])
 
     def run(self):
@@ -48,7 +48,7 @@ class SimulationController:
 
     
     def wait_for_ros(self):
-        rospy.init_node('deepersense', anonymous=True)
+        rospy.init_node('sim_controller', anonymous=True)
         
 
         def callback(data):
