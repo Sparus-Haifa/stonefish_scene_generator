@@ -16,7 +16,8 @@ from sensor_msgs.msg import CameraInfo
 
 
 class SimulationController:
-    def __init__(self):
+    def __init__(self, launch_file_path):
+        self.launch_file_path = launch_file_path
         self.ros_is_running = False
         self.timer = None
         
@@ -37,7 +38,8 @@ class SimulationController:
             full_path = os.path.join(package_path, 'launch','sparus2_haifa_deepersense_simulation.launch')
             return full_path
 
-        full_path = getPath()
+        # full_path = getPath()
+        full_path = self.launch_file_path
         uuid = roslaunch.rlutil.get_or_generate_uuid(None, False)
         roslaunch.configure_logging(uuid)
         self.launch = roslaunch.parent.ROSLaunchParent(uuid, [full_path])
@@ -73,7 +75,7 @@ class SimulationController:
             r.sleep()
 
 
-
+        rospy.loginfo('timeout: shutting down')
         rospy.signal_shutdown('timeout')
         self.launch.shutdown()
 
@@ -84,7 +86,7 @@ def main():
 
 
 
-    controller = SimulationController()
+    controller = SimulationController('/home/ilan/catkin_ws/src/stonefish_scene_generator/launch/audo_generated.launch')
     controller.run()
     controller.wait_for_ros()
 

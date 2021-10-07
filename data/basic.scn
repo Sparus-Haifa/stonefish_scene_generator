@@ -68,7 +68,7 @@
   <static name="reef" type="model">
     <material name="Rock"/>
     <look name="reef3"/>
-    <world_transform rpy="-0.2 0.15 -0.41340087335" xyz="30.4435478938 -28.347955787 15.05"/>
+    <world_transform rpy="-0.2 0.15 1.37974543062" xyz="39.5952941689 -8.70062009141 15.05"/>
     <physical>
       <mesh filename="reef3/2019.obj" scale="1.0"/>
       <origin rpy="3.14 0.0 0.0" xyz="0.0 0.0 0.0"/>
@@ -77,7 +77,7 @@
   <static name="reef" type="model">
     <material name="Rock"/>
     <look name="reef3"/>
-    <world_transform rpy="-0.2 0.15 1.37974543062" xyz="39.5952941689 -38.7006200914 15.05"/>
+    <world_transform rpy="-0.2 0.15 -0.0403309985978" xyz="41.0657052709 8.97564350755 15.05"/>
     <physical>
       <mesh filename="reef3/2019.obj" scale="1.0"/>
       <origin rpy="3.14 0.0 0.0" xyz="0.0 0.0 0.0"/>
@@ -86,7 +86,7 @@
   <static name="reef" type="model">
     <material name="Rock"/>
     <look name="reef3"/>
-    <world_transform rpy="-0.2 0.15 -0.0403309985978" xyz="41.0657052709 -21.0243564925 15.05"/>
+    <world_transform rpy="-0.2 0.15 -1.13005708266" xyz="50.0317625701 21.7313352969 15.05"/>
     <physical>
       <mesh filename="reef3/2019.obj" scale="1.0"/>
       <origin rpy="3.14 0.0 0.0" xyz="0.0 0.0 0.0"/>
@@ -95,7 +95,7 @@
   <static name="reef" type="model">
     <material name="Rock"/>
     <look name="reef3"/>
-    <world_transform rpy="-0.2 0.15 0.423967451098" xyz="40.0201689853 11.8701610012 15.05"/>
+    <world_transform rpy="-0.2 0.15 1.61775262995" xyz="81.5070814833 -18.3064759362 15.05"/>
     <physical>
       <mesh filename="reef3/2019.obj" scale="1.0"/>
       <origin rpy="3.14 0.0 0.0" xyz="0.0 0.0 0.0"/>
@@ -104,106 +104,7 @@
   <static name="reef" type="model">
     <material name="Rock"/>
     <look name="reef3"/>
-    <world_transform rpy="-0.2 0.15 -1.13005708266" xyz="50.0317625701 -38.2686647031 15.05"/>
-    <physical>
-      <mesh filename="reef3/2019.obj" scale="1.0"/>
-      <origin rpy="3.14 0.0 0.0" xyz="0.0 0.0 0.0"/>
-    </physical>
-  </static>
-  <static name="reef" type="model">
-    <material name="Rock"/>
-    <look name="reef3"/>
-    <world_transform rpy="-0.2 0.15 0.321958305449" xyz="50.8580082095 -29.8102363547 15.05"/>
-    <physical>
-      <mesh filename="reef3/2019.obj" scale="1.0"/>
-      <origin rpy="3.14 0.0 0.0" xyz="0.0 0.0 0.0"/>
-    </physical>
-  </static>
-  <static name="reef" type="model">
-    <material name="Rock"/>
-    <look name="reef3"/>
-    <world_transform rpy="-0.2 0.15 -1.96733856256" xyz="60.4510927195 0.626637555959 15.05"/>
-    <physical>
-      <mesh filename="reef3/2019.obj" scale="1.0"/>
-      <origin rpy="3.14 0.0 0.0" xyz="0.0 0.0 0.0"/>
-    </physical>
-  </static>
-  <static name="reef" type="model">
-    <material name="Rock"/>
-    <look name="reef3"/>
-    <world_transform rpy="-0.2 0.15 1.61775262995" xyz="61.9581742028 21.6935240638 15.05"/>
-    <physical>
-      <mesh filename="reef3/2019.obj" scale="1.0"/>
-      <origin rpy="3.14 0.0 0.0" xyz="0.0 0.0 0.0"/>
-    </physical>
-  </static>
-  <static name="reef" type="model">
-    <material name="Rock"/>
-    <look name="reef3"/>
-    <world_transform rpy="-0.2 0.15 0.708277899656" xyz="89.9457768079 -29.4794106384 15.05"/>
-    <physical>
-      <mesh filename="reef3/2019.obj" scale="1.0"/>
-      <origin rpy="3.14 0.0 0.0" xyz="0.0 0.0 0.0"/>
-    </physical>
-  </static>
-  <static name="reef" type="model">
-    <material name="Rock"/>
-    <look name="reef3"/>
-    <world_transform rpy="-0.2 0.15 -1.75550782847" xyz="91.1241086947 9.33014459688 15.05"/>
-    <physical>
-      <mesh filename="reef3/2019.obj" scale="1.0"/>
-      <origin rpy="3.14 0.0 0.0" xyz="0.0 0.0 0.0"/>
-    </physical>
-  </static>
-  <static name="reef" type="model">
-    <material name="Rock"/>
-    <look name="reef3"/>
-    <world_transform rpy="-0.2 0.15 -2.22086868963" xyz="91.9147912555 28.1809362715 15.05"/>
-    <physical>
-      <mesh filename="reef3/2019.obj" scale="1.0"/>
-      <origin rpy="3.14 0.0 0.0" xyz="0.0 0.0 0.0"/>
-    </physical>
-  </static>
-  <static name="reef" type="model">
-    <material name="Rock"/>
-    <look name="reef3"/>
-    <world_transform rpy="-0.2 0.15 0.847799434244" xyz="100.425353671 0.303811792126 15.05"/>
-    <physical>
-      <mesh filename="reef3/2019.obj" scale="1.0"/>
-      <origin rpy="3.14 0.0 0.0" xyz="0.0 0.0 0.0"/>
-    </physical>
-  </static>
-  <static name="reef" type="model">
-    <material name="Rock"/>
-    <look name="reef3"/>
-    <world_transform rpy="-0.2 0.15 -3.00412271811" xyz="111.844125121 -41.2601122344 15.05"/>
-    <physical>
-      <mesh filename="reef3/2019.obj" scale="1.0"/>
-      <origin rpy="3.14 0.0 0.0" xyz="0.0 0.0 0.0"/>
-    </physical>
-  </static>
-  <static name="reef" type="model">
-    <material name="Rock"/>
-    <look name="reef3"/>
-    <world_transform rpy="-0.2 0.15 -1.81757951791" xyz="113.047111482 -28.2521233654 15.05"/>
-    <physical>
-      <mesh filename="reef3/2019.obj" scale="1.0"/>
-      <origin rpy="3.14 0.0 0.0" xyz="0.0 0.0 0.0"/>
-    </physical>
-  </static>
-  <static name="reef" type="model">
-    <material name="Rock"/>
-    <look name="reef3"/>
-    <world_transform rpy="-0.2 0.15 -0.467113735248" xyz="111.45311236 -20.9603204408 15.05"/>
-    <physical>
-      <mesh filename="reef3/2019.obj" scale="1.0"/>
-      <origin rpy="3.14 0.0 0.0" xyz="0.0 0.0 0.0"/>
-    </physical>
-  </static>
-  <static name="reef" type="model">
-    <material name="Rock"/>
-    <look name="reef3"/>
-    <world_transform rpy="-0.2 0.15 0.0228372527181" xyz="109.610627188 18.4036849648 15.05"/>
+    <world_transform rpy="-0.2 0.15 0.708277899656" xyz="99.9457768079 10.5205893616 15.05"/>
     <physical>
       <mesh filename="reef3/2019.obj" scale="1.0"/>
       <origin rpy="3.14 0.0 0.0" xyz="0.0 0.0 0.0"/>

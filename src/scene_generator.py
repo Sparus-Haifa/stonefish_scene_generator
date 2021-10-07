@@ -63,7 +63,7 @@ class SceneGenerator:
         for x in range (0,120,10):
             for y in range(-40,40,10):
                 # depth = random.uniform(0,self.seabed_depth - box_height/2)
-                allow = random.randint(1,5) == 1
+                allow = random.randint(1,10) == 1
                 if not allow:
                     continue
                 angle = random.uniform(-3.14,3.14)

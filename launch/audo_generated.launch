@@ -6,18 +6,18 @@
     <arg name="enable_keyboard" default="true"/>
     <arg name="enable_joystick" default="true"/>
     <arg name="joystick_device" default="/dev/input/js0"/>
-    <arg name="enable_gui" default="true"/>
-    <arg name="enable_rviz" default="true"/>
-    <arg name="is_simulation" default="true"/>
-    
-    
+<arg name="enable_gui" default="true"/>
 
+<arg name="enable_rviz" default="true"/>
+<arg name="is_simulation" default="true"/>
+    
+    
     <!-- Run Simulator -->
     <include file="$(find stonefish_ros)/launch/simulator.launch">
         <arg name="simulation_data" value="$(find cola2_stonefish)/data"/>
-     <arg name="scenario_description" value="/home/ilan/catkin_ws/src/stonefish_scene_generator/data"/>
-<arg name="simulation_rate" value="300"/>
-<arg name="graphics_resolution" value="1920 1080"/>
+<arg name="scenario_description" value="/home/ilan/catkin_ws/src/stonefish_scene_generator/data/basic.scn"/>
+<arg name="simulation_rate" value="300.0"/>
+<arg name="graphics_resolution" value="1200 800"/>
 
         <arg name="graphics_quality" value="high"/>
     </include>
