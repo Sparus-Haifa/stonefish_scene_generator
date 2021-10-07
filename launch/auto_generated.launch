@@ -15,7 +15,7 @@
     <!-- Run Simulator -->
     <include file="$(find stonefish_ros)/launch/simulator.launch">
         <arg name="simulation_data" value="$(find cola2_stonefish)/data"/>
-<arg name="scenario_description" value="/home/ilan/catkin_ws/src/stonefish_scene_generator/data/basic.scn"/>
+<arg name="scenario_description" value="/home/zeged/catkin_ws/src/stonefish_scene_generator/data/basic.scn"/>
 <arg name="simulation_rate" value="300.0"/>
 <arg name="graphics_resolution" value="1200 800"/>
 

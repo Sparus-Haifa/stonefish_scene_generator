@@ -12,7 +12,7 @@ import rospkg
 import roslaunch
 # import time
 
-from sensor_msgs.msg import CameraInfo
+from sensor_msgs.msg import CameraInfo, Image
 
 
 class SimulationController:
@@ -50,6 +50,7 @@ class SimulationController:
 
     
     def wait_for_ros(self):
+        rospy.loginfo("waiting for topic msg")
         rospy.init_node('sim_controller', anonymous=True)
         
 
@@ -62,7 +63,8 @@ class SimulationController:
             
             
         
-        rospy.Subscriber("/camera2/image_raw/camera_info", CameraInfo, callback, queue_size=1)
+        rospy.Subscriber("/camera2/image_raw/image_color", Image, callback, queue_size=1)
+        msg = rospy.wait_for_message("/camera2/image_raw/camera_info", CameraInfo, timeout=None)
 
 
 
@@ -71,12 +73,14 @@ class SimulationController:
         while not rospy.is_shutdown():
             if not self.timer is None:
                 if rospy.get_time() - self.timer > 15:
+                    print('rospy.get_time() - self.timer > 15')
+                    print(rospy.get_time(), self.timer)
                     break
             r.sleep()
 
 
         rospy.loginfo('timeout: shutting down')
-        rospy.signal_shutdown('timeout')
+        # rospy.signal_shutdown('timeout')
         self.launch.shutdown()
 
 
