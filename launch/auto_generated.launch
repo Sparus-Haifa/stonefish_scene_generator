@@ -30,7 +30,9 @@
 
 
     <node pkg="rosbag" type="record" name="rosbag_record_cam"
-       args="record -o /home/zeged/bags/test.bag /camera2/image_raw/camera_info /camera2/image_raw/image_color /image_depth2/camera_info /image_depth2/image_depth /sparus2/Blue_view_M900_FLS2/display /sparus2/Blue_view_M900_FLS3/display /sparus2/Blue_view_M900_FLS4/display"
+       args="record -o 
+/home/zeged/catkin_ws/src/stonefish_scene_generator/data/basic.bag 
+/camera2/image_raw/camera_info /camera2/image_raw/image_color /image_depth2/camera_info /image_depth2/image_depth /sparus2/Blue_view_M900_FLS2/display /sparus2/Blue_view_M900_FLS3/display /sparus2/Blue_view_M900_FLS4/display"
         />
 
 
