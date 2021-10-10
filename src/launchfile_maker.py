@@ -37,7 +37,7 @@ class LaunchFileMaker:
 
 
     <node pkg="rosbag" type="record" name="rosbag_record_cam"
-       args="record -o """,
+       args="record -O """,
        """{} """.format(self.output_bagfile_path),
        """/camera2/image_raw/camera_info /camera2/image_raw/image_color /image_depth2/camera_info /image_depth2/image_depth /sparus2/Blue_view_M900_FLS2/display /sparus2/Blue_view_M900_FLS3/display /sparus2/Blue_view_M900_FLS4/display"
         />
