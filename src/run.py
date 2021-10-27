@@ -68,7 +68,7 @@ def main():
     scene = make_a_scene()
     rospack = rospkg.RosPack()
     package_path = rospack.get_path('stonefish_scene_generator')
-    scene_folder_path = os.path.join(package_path, 'scene')
+    # scene_folder_path = os.path.join(package_path, 'scene')
     scene_file_full_path = os.path.join(package_path, 'scene', 'basic')
     save_scene_to_file(scene, scene_file_full_path)
     data_folder_path = '/home/data/'
@@ -80,7 +80,7 @@ def main():
     resolution = (1200, 800)
     # data_folder_path = '/home/data'
     bagfile_path = os.path.join(data_folder_path, 'basic' + '.bag')
-    maker = LaunchFileMaker(scene_file_full_path, rate, resolution, bagfile_path)
+    maker = LaunchFileMaker(scene_file_full_path + '.scn', rate, resolution, bagfile_path)
     maker.save_to_file(launch_file_path)
     controller = SimulationController(launch_file_path)
     controller.run()
