@@ -21,7 +21,7 @@ class LaunchFileMaker:
     
     <!-- Run Simulator -->
     <include file="$(find stonefish_ros)/launch/simulator.launch">
-        <arg name="simulation_data" value="$(find cola2_stonefish)/data"/>""",
+        <arg name="simulation_data" value="/home/data/assets"/>""",
 """<arg name="scenario_description" value="{}"/>""".format(self.scn_file_path),
 """<arg name="simulation_rate" value="{}"/>""".format(self.rate),
 """<arg name="graphics_resolution" value="{} {}"/>""".format(self.resolution[0], self.resolution[1]),
@@ -29,10 +29,6 @@ class LaunchFileMaker:
         <arg name="graphics_quality" value="high"/>
     </include>
     
-    <!-- RViz -->
-    <group if="$(arg enable_rviz)">
-        <node pkg="rviz" type="rviz" name="rviz" args="-d $(find cola2_sparus2)/scene/sparus2.rviz"/>
-    </group>
 
 
 
@@ -48,6 +44,12 @@ class LaunchFileMaker:
 
                     """]
 
+    # <!-- RViz -->
+    # <group if="$(arg enable_rviz)">
+    #     <node pkg="rviz" type="rviz" name="rviz" args="-d $(find cola2_sparus2)/scene/sparus2.rviz"/>
+    # </group>
+
+    
     def generate_xml(self, arr):
         return "\n".join(arr)
 
