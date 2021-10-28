@@ -19,8 +19,8 @@ def make_a_scene():
     seabed_depth = 15
     gen = SceneGenerator(seabed_depth)
     gen.add_empty_frame(ColorMap.jet)
-    # gen.add_boxes()
-    gen.add_reefs()
+    gen.add_boxes()
+    # gen.add_reefs()
     scene = gen.generate()
     return scene
 
@@ -86,7 +86,7 @@ def main():
     controller.run()
     controller.wait_for_ros()
     bag = rosbag.Bag(bagfile_path, 'r')
-    image_folder_path = data_folder_path
+    image_folder_path = os.path.join(data_folder_path, 'images')
 
 
 

@@ -6,7 +6,6 @@
   <looks>
     <look name="Red" rgb="1.0 0.1 0.1" roughness="0.3"/>
     <look name="seabed" rgb="0.7 0.7 0.5" roughness="0.9" texture="sand_normal.png"/>
-    <look gray="1.0" name="reef3" roughness="0.3" texture="reef3/2019.jpg"/>
   </looks>
   <environment>
     <ned latitude="32.8141543637297" longitude="34.94752031090906"/>
@@ -65,49 +64,1204 @@
       <keypoint rpy="0.0 0.0 0.0" time="55.0" xyz="100 0.0 13"/>
     </trajectory>
   </animated>
-  <static name="reef" type="model">
+  <static name="box0.-100" type="box">
     <material name="Rock"/>
-    <look name="reef3"/>
-    <world_transform rpy="-0.2 0.15 1.37974543062" xyz="39.5952941689 -8.70062009141 15.05"/>
-    <physical>
-      <mesh filename="reef3/2019.obj" scale="1.0"/>
-      <origin rpy="3.14 0.0 0.0" xyz="0.0 0.0 0.0"/>
-    </physical>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="0 -100 12.6663277729"/>
+    <dimensions xyz="1 1 1"/>
   </static>
-  <static name="reef" type="model">
+  <static name="box0.-90" type="box">
     <material name="Rock"/>
-    <look name="reef3"/>
-    <world_transform rpy="-0.2 0.15 -0.0403309985978" xyz="41.0657052709 8.97564350755 15.05"/>
-    <physical>
-      <mesh filename="reef3/2019.obj" scale="1.0"/>
-      <origin rpy="3.14 0.0 0.0" xyz="0.0 0.0 0.0"/>
-    </physical>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="0 -90 11.3693160441"/>
+    <dimensions xyz="1 1 1"/>
   </static>
-  <static name="reef" type="model">
+  <static name="box0.-80" type="box">
     <material name="Rock"/>
-    <look name="reef3"/>
-    <world_transform rpy="-0.2 0.15 -1.13005708266" xyz="50.0317625701 21.7313352969 15.05"/>
-    <physical>
-      <mesh filename="reef3/2019.obj" scale="1.0"/>
-      <origin rpy="3.14 0.0 0.0" xyz="0.0 0.0 0.0"/>
-    </physical>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="0 -80 6.30857371246"/>
+    <dimensions xyz="1 1 1"/>
   </static>
-  <static name="reef" type="model">
+  <static name="box0.-70" type="box">
     <material name="Rock"/>
-    <look name="reef3"/>
-    <world_transform rpy="-0.2 0.15 1.61775262995" xyz="81.5070814833 -18.3064759362 15.05"/>
-    <physical>
-      <mesh filename="reef3/2019.obj" scale="1.0"/>
-      <origin rpy="3.14 0.0 0.0" xyz="0.0 0.0 0.0"/>
-    </physical>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="0 -70 3.88375125439"/>
+    <dimensions xyz="1 1 1"/>
   </static>
-  <static name="reef" type="model">
+  <static name="box0.-60" type="box">
     <material name="Rock"/>
-    <look name="reef3"/>
-    <world_transform rpy="-0.2 0.15 0.708277899656" xyz="99.9457768079 10.5205893616 15.05"/>
-    <physical>
-      <mesh filename="reef3/2019.obj" scale="1.0"/>
-      <origin rpy="3.14 0.0 0.0" xyz="0.0 0.0 0.0"/>
-    </physical>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="0 -60 7.66912082053"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box0.-50" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="0 -50 6.07401206176"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box0.-40" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="0 -40 11.7569788355"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box0.-30" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="0 -30 4.54969089118"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box0.-20" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="0 -20 7.14895431229"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box0.-10" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="0 -10 8.75073059183"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box0.0" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="0 0 13.6216932779"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box0.10" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="0 10 7.57030283726"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box0.20" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="0 20 4.227567666"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box0.30" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="0 30 11.3370630624"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box0.40" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="0 40 9.27553495013"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box0.50" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="0 50 3.75759512044"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box0.60" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="0 60 13.6461938395"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box0.70" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="0 70 14.7417821406"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box0.80" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="0 80 12.1532585399"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box0.90" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="0 90 13.5324892566"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box10.-100" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="10 -100 4.65221353979"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box10.-90" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="10 -90 10.9474762239"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box10.-80" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="10 -80 13.4825743195"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box10.-70" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="10 -70 10.2597589787"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box10.-60" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="10 -60 7.08214073179"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box10.-50" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="10 -50 1.51051812103"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box10.-40" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="10 -40 6.51257753181"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box10.-30" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="10 -30 9.16330460166"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box10.-20" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="10 -20 13.6951657986"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box10.-10" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="10 -10 14.4990955166"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box10.0" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="10 0 7.15514664829"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box10.10" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="10 10 12.9796489166"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box10.20" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="10 20 3.90738465588"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box10.30" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="10 30 12.0754174052"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box10.40" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="10 40 8.23048955753"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box10.50" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="10 50 0.21062550246"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box10.60" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="10 60 10.7955702961"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box10.70" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="10 70 5.98235313336"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box10.80" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="10 80 12.3726746572"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box10.90" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="10 90 10.0222980185"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box20.-100" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="20 -100 0.0171422897164"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box20.-90" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="20 -90 7.40366799698"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box20.-80" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="20 -80 13.0140416324"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box20.-70" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="20 -70 3.65866315331"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box20.-60" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="20 -60 4.87806544121"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box20.-50" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="20 -50 13.0570684816"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box20.-40" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="20 -40 2.86600637254"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box20.-30" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="20 -30 8.51266110931"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box20.-20" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="20 -20 3.57923892923"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box20.-10" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="20 -10 14.5131037544"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box20.0" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="20 0 12.0476920392"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box20.10" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="20 10 6.71954357153"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box20.20" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="20 20 1.20668727829"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box20.30" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="20 30 4.80081907009"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box20.40" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="20 40 7.61910963781"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box20.50" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="20 50 13.9925073634"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box20.60" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="20 60 1.63586768897"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box20.70" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="20 70 8.26900869136"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box20.80" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="20 80 10.598421148"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box20.90" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="20 90 8.21161366993"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box30.-100" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="30 -100 12.2170029494"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box30.-90" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="30 -90 8.10425410455"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box30.-80" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="30 -80 14.4575781896"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box30.-70" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="30 -70 9.04778441942"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box30.-60" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="30 -60 8.81425596263"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box30.-50" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="30 -50 6.67483539413"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box30.-40" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="30 -40 8.94430292375"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box30.-30" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="30 -30 5.77351718959"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box30.-20" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="30 -20 8.63476521247"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box30.-10" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="30 -10 4.35494253604"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box30.0" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="30 0 2.84086992832"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box30.10" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="30 10 2.80094292383"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box30.20" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="30 20 9.19159769803"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box30.30" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="30 30 9.84989083484"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box30.40" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="30 40 7.14796488014"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box30.50" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="30 50 1.34736541793"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box30.60" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="30 60 11.3640588295"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box30.70" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="30 70 13.1515555623"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box30.80" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="30 80 13.8507152392"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box30.90" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="30 90 12.6369033471"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box40.-100" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="40 -100 13.4725968204"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box40.-90" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="40 -90 13.8462365973"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box40.-80" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="40 -80 8.10899887422"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box40.-70" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="40 -70 5.86944075352"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box40.-60" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="40 -60 10.5792509978"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box40.-50" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="40 -50 4.13451181968"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box40.-40" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="40 -40 12.1744306276"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box40.-30" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="40 -30 12.7422894778"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box40.-20" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="40 -20 13.4255845114"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box40.-10" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="40 -10 8.84701775297"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box40.0" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="40 0 14.2464730985"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box40.10" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="40 10 8.69542516118"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box40.20" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="40 20 6.75844659947"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box40.30" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="40 30 9.90368067934"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box40.40" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="40 40 14.9438675903"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box40.50" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="40 50 13.7541182692"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box40.60" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="40 60 11.899876262"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box40.70" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="40 70 1.23559482295"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box40.80" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="40 80 9.19174657561"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box40.90" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="40 90 7.29666302954"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box50.-100" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="50 -100 9.45221010617"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box50.-90" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="50 -90 12.6761636351"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box50.-80" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="50 -80 3.64553433093"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box50.-70" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="50 -70 10.9723383119"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box50.-60" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="50 -60 1.75701439813"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box50.-50" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="50 -50 3.30690805302"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box50.-40" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="50 -40 11.9187445757"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box50.-30" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="50 -30 4.98804223829"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box50.-20" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="50 -20 12.238696448"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box50.-10" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="50 -10 1.50911280324"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box50.0" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="50 0 2.19537733368"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box50.10" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="50 10 10.4650596029"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box50.20" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="50 20 0.678511017984"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box50.30" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="50 30 8.60799055184"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box50.40" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="50 40 13.6502402205"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box50.50" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="50 50 8.01296952391"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box50.60" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="50 60 10.2088369884"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box50.70" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="50 70 0.400451919933"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box50.80" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="50 80 9.52499864867"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box50.90" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="50 90 9.09507626631"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box60.-100" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="60 -100 8.63929422047"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box60.-90" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="60 -90 5.86814113984"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box60.-80" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="60 -80 5.55209910503"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box60.-70" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="60 -70 14.7077497597"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box60.-60" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="60 -60 0.545880564172"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box60.-50" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="60 -50 0.324547647825"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box60.-40" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="60 -40 14.4154692036"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box60.-30" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="60 -30 2.77457912096"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box60.-20" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="60 -20 1.85842746637"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box60.-10" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="60 -10 3.1586476483"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box60.0" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="60 0 12.0111988553"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box60.10" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="60 10 14.0545373797"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box60.20" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="60 20 0.34173863503"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box60.30" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="60 30 6.3842824795"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box60.40" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="60 40 1.52250329061"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box60.50" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="60 50 3.89879834689"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box60.60" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="60 60 3.31243906974"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box60.70" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="60 70 9.70388579753"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box60.80" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="60 80 5.25440951095"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box60.90" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="60 90 2.70476852295"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box70.-100" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="70 -100 7.55454757815"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box70.-90" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="70 -90 0.59068060627"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box70.-80" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="70 -80 1.51381861783"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box70.-70" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="70 -70 14.8235272308"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box70.-60" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="70 -60 2.99033685701"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box70.-50" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="70 -50 5.37832951967"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box70.-40" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="70 -40 10.9739745934"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box70.-30" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="70 -30 12.5748984779"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box70.-20" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="70 -20 13.7772309299"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box70.-10" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="70 -10 2.54136909146"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box70.0" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="70 0 10.0896084536"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box70.10" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="70 10 14.4982335456"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box70.20" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="70 20 0.870764157397"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box70.30" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="70 30 10.1430267645"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box70.40" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="70 40 12.6813689055"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box70.50" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="70 50 5.13468811618"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box70.60" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="70 60 3.76031008928"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box70.70" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="70 70 8.95187090204"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box70.80" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="70 80 6.63471050549"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box70.90" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="70 90 2.62229226677"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box80.-100" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="80 -100 7.07438122644"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box80.-90" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="80 -90 6.14858093486"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box80.-80" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="80 -80 8.53669109286"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box80.-70" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="80 -70 7.62900195094"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box80.-60" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="80 -60 4.671690015"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box80.-50" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="80 -50 5.35727523885"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box80.-40" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="80 -40 12.5649176155"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box80.-30" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="80 -30 3.76398997233"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box80.-20" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="80 -20 8.4090032828"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box80.-10" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="80 -10 0.18654478244"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box80.0" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="80 0 11.1236156612"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box80.10" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="80 10 5.0387483171"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box80.20" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="80 20 0.685447403526"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box80.30" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="80 30 4.21324746328"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box80.40" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="80 40 3.6019561174"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box80.50" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="80 50 14.2969400974"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box80.60" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="80 60 5.28338342273"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box80.70" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="80 70 4.31816872285"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box80.80" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="80 80 5.38801795881"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box80.90" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="80 90 14.2035875349"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box90.-100" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="90 -100 9.50621778374"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box90.-90" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="90 -90 9.31615268428"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box90.-80" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="90 -80 10.7342902545"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box90.-70" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="90 -70 5.82025852969"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box90.-60" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="90 -60 6.21626982416"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box90.-50" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="90 -50 9.76249293395"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box90.-40" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="90 -40 0.0228633278508"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box90.-30" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="90 -30 2.88464311867"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box90.-20" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="90 -20 5.01602535994"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box90.-10" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="90 -10 3.59123940279"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box90.0" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="90 0 9.56099101694"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box90.10" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="90 10 5.67972105485"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box90.20" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="90 20 13.1313508757"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box90.30" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="90 30 8.52227131365"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box90.40" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="90 40 6.21609595025"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box90.50" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="90 50 6.03400612679"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box90.60" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="90 60 10.527444359"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box90.70" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="90 70 6.27339829939"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box90.80" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="90 80 9.93293833461"/>
+    <dimensions xyz="1 1 1"/>
+  </static>
+  <static name="box90.90" type="box">
+    <material name="Rock"/>
+    <look name="Red"/>
+    <world_transform rpy="0.0 0.0 0.0" xyz="90 90 0.701695289352"/>
+    <dimensions xyz="1 1 1"/>
   </static>
 </scenario>
