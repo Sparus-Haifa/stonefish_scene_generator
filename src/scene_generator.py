@@ -1,5 +1,6 @@
 from pystonefish import Scene, WorldTransform, Box, Sphere, Cylinder, Plane, MeshFileModel, AnimatedFrame, ColorMap
 import random
+import rospkg
 
 random.seed(0)
 
@@ -95,7 +96,12 @@ def simple_scene():
     scene = gen.generate()
     print(scene)
 
-    f = open("/home/ilan/catkin_ws/src/cola2_stonefish/scenarios/sparus2_haifa_deepersense.scn", "w")
+    # get an instance of RosPack with the default search paths
+    rospack = rospkg.RosPack()
+    # get the file path for cola2_stonefish/scenarios/sparus2_generated_scene.scn
+    scn_path = rospack.get_path('cola2_stonefish') + '/scenarios/sparus2_generated_scene.scn'
+
+    f = open(scn_path, "w")
     f.write(scene)
     f.close()
 

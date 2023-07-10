@@ -8,6 +8,8 @@ from xml.dom import minidom
 
 from enum import Enum
 
+import rospkg
+
 
 class ColorMap(Enum):
     hot = 'hot'
@@ -644,9 +646,9 @@ def main():
 
 
     # Boat
-    scene.add_look('white', 1.0, None, 0.2)
-    boat1 = MeshFileModel('boat', 'models/Tug_boat_simple1.obj', 0.0010, 'Aluminium', 'white', WorldTransform((-1.57, 0.0, 1.57),(40 ,20 ,0.8)))
-    scene.append(boat1)
+    # scene.add_look('white', 1.0, None, 0.2)
+    # boat1 = MeshFileModel('boat', 'models/Tug_boat_simple1.obj', 0.0010, 'Aluminium', 'white', WorldTransform((-1.57, 0.0, 1.57),(40 ,20 ,0.8)))
+    # scene.append(boat1)
 
     # boat2 = MeshFileModel('boat', 'models/Tug_boat_simple1.obj', 0.0005, 'Aluminium', 'white', WorldTransform((-1.57, 0.0, 0.0),(40 ,40 ,0.8)))
     # scene.append(boat2)
@@ -678,8 +680,13 @@ def main():
     xml = scene.toString()
     print(xml)
 
-    filename = "/home/ygutnik/catkin_ws/src/cola2_stonefish/scenarios/sparus2_generated_scene.scn"
-    with open(filename, "w") as f:
+    # get an instance of RosPack with the default search paths
+    rospack = rospkg.RosPack()
+    # get the file path for cola2_stonefish/scenarios/sparus2_generated_scene.scn
+    scn_path = rospack.get_path('cola2_stonefish') + '/scenarios/sparus2_generated_scene.scn'
+
+    # filename = "/home/ygutnik/catkin_ws/src/cola2_stonefish/scenarios/sparus2_generated_scene.scn"
+    with open(scn_path, "w") as f:
         f.write(xml)
 
 
